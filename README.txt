@@ -44,4 +44,6 @@ The end result should be a database containing the devices, representing the lat
 
 	+ Since it is a long time that I do not touch Go so I may need more time to complete this task.
 
-
+	+ 2022-09-26: 2 hours spended
+		- Add deviceInfoTransform func to transform raw data to Device struct
+		- Add insertDevices to insert new devices in batch (currently notworking)     

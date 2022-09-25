@@ -30,8 +30,10 @@ func main() {
 		devicesIDs[i] = k
 		i++
 	}
-	for _, k := range devicesIDs {
-		fmt.Printf("key = %s \n", k)
-	}
+	transformedDevice := deviceInfoTransform(devices)
+	fmt.Println(transformedDevice[9].id)
+	insertDevices(transformedDevice)
+	fmt.Println(len(devices))
+	fmt.Println(len(transformedDevice))
 
 }
