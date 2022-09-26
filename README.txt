@@ -47,3 +47,4 @@ The end result should be a database containing the devices, representing the lat
 	+ 2022-09-26: 2 hours spended
 		- Add deviceInfoTransform func to transform raw data to Device struct
 		- Add insertDevices to insert new devices in batch (currently notworking)     
+	+ 2022-09-26: Refactoring db connection info in DeviceService.go
