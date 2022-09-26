@@ -53,7 +53,7 @@ func deviceInfoTransform(rawDevices map[string]interface{}) []Device {
 
 func insertDevices(devices []Device) {
 	fmt.Println(len(devices))
-	dsn := "awair:awair@tcp(127.0.0.1:3306)/awair?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "lhphuc:lhphuc@tcp(127.0.0.1:3306)/devices?charset=utf8mb4&parseTime=True&loc=Local"
 	db, errConnectDB := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if errConnectDB != nil {
 		panic("Cannot open connection to database")
